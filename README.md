@@ -21,10 +21,10 @@
 pandas, numpy, warnings, matplotlib, seaborn, shap, lightgbm, sklearn, plotly, imblearn
 
 ### Технологии
-python==3.12.7
-shap==0.47.2
-pandas==2.2.2
-matplotlib==3.9.2
+- python==3.12.7
+- shap==0.47.2
+- pandas==2.2.2
+- matplotlib==3.9.2
 seaborn==0.13.2
 numpy==1.26.4
 lightgbm==4.6.0

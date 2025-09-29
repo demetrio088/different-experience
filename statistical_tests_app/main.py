@@ -9,14 +9,6 @@ warnings.filterwarnings('ignore')
 import argparse
 
 def main():
-    #parser = argparse.ArgumentParser(description="Пример с одним аргументом")
-    #parser.add_argument('--name1', default='Выборка_1', help='Выборка_1')
-    #parser.add_argument('--name2', default='Выборка_2', help='Выборка_2')
-    #args = parser.parse_args()
-    
-    #name_1 = args.name1
-    #name_2 = args.name2
-
     # ПРОВЕРКА ПАРАМЕТРИЧЕСКИХ ТЕСТОВ
     # сгенерируем 1 тестовую выборку и среднее для одновыборочного t-теста Стьюдента
     sample_1 = pd.DataFrame(data=generate_random_normal(1000, 33, 1), columns=['Выборка_1'])

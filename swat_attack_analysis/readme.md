@@ -19,7 +19,6 @@
 pandas, numpy, warnings, matplotlib, seaborn, shap, lightgbm, sklearn, plotly, imblearn
 
 ### Технологии
-- python==3.12.7
 - shap==0.47.2
 - pandas==2.2.2
 - matplotlib==3.9.2

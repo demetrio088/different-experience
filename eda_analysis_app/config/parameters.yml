@@ -1,0 +1,52 @@
+# parameters.yml
+project:
+  name: 'Intelligence Analysis (EDA) of time series using Singular Value Spectral Analysis (SSA)'
+  version: '1.0.0'
+  date: '2025-09-08'
+  author: 'FokinDV'
+
+# опции вывода: отображение всех строк данных для отображения в консоли, игнорирование не критичных ошибок
+options:
+  warnings: 'ignore' # игнорирование всех предупреждающих сообщений
+  max_rows: null # показать все данные
+  max_columns: null # показать все данные
+  width: null # авто
+  max_colwidth: 200 # заданная максимальная величина ячейки
+  head: 10 # значение для оценки корректности вывода данных
+
+# КЛЮЧЕВОЙ ПАРАМЕТР: указание пути и наименование файла с исходными данными
+paths:
+  data_dir: 'C:/Users/FokinDV/Desktop/Data Science/Работа на 25.08.2025/EDA_modules/data'
+  trend_dir: 'C:/Users/FokinDV/Desktop/Data Science/Работа на 25.08.2025/EDA_modules/data/trend_research'
+  data_file: 'for_research.csv'
+
+# КЛЮЧЕВОЙ ПАРАМЕТР: названия исследуемых признаков
+data_signs:
+  first_sign: 'column1'
+  second_sign: 'column2'
+  third_sign: 'column3'
+
+# параметры для статистических исследований
+ssa_analysis:
+  # параметры для первоначального исследования (ШАГ 1)
+  research_windows: [3, 6, 12]
+
+  # параметры для финального разложения на компоненты (ШАГ 2 и 4)
+  decomposition_window: 2
+  # включение экономии памяти
+  save_mem: True
+
+# параметры графиков для корректного представления визуализаций
+visualization:
+  acf_pacf_limit: 300
+  ff_limit: 300
+  rolling_window_size: 10000
+
+# уровень значимости (alpha) для всех тестов
+statistical_tests:
+  p_value: 0.05
+
+# компоненты признаков
+component_of_signs:
+  component_1: 'F0'
+  component_2: 'F1'
